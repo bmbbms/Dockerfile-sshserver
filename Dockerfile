@@ -4,7 +4,6 @@ FROM ubuntu:14.04
 MAINTAINER bmbbms 891765948@qq.com
 #安装ssh服务
 RUN apt-get install -y openssh-server
-
 RUN mkdir -p /var/run/sshd
 
 RUN mkdir -p /root/.ssh
