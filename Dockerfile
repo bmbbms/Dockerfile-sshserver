@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 #作者信息
 MAINTAINER bmbbms 891765948@qq.com
 #安装ssh服务
-RUN apt-get install -y python
+RUN apt-get updte && aapt-get install -y python
 RUN mkdir -p /var/run/sshd
 
 RUN mkdir -p /root/.ssh
