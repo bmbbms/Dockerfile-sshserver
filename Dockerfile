@@ -3,12 +3,12 @@ FROM centos:7
 #作者信息
 MAINTAINER bmbbms 891765948@qq.com
 #安装ssh服务
-RUN yum install openssh-server
+RUN yum install python
 RUN mkdir -p /var/run/sshd
 
 RUN mkdir -p /root/.ssh
 #取消pam登陆限制
-RUN sed -ri 's/session	required	pam_loginuid.so/#session	required	pam_loginuid.so/g'
+#RUN sed -ri 's/session	required	pam_loginuid.so/#session	required	pam_loginuid.so/g'
 #添加认证文件和run脚本
 ADD authorized_keys /root/.ssh/authorized_keys
 ADD run.sh /root/run.sh
