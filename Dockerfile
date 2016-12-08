@@ -1,9 +1,9 @@
 #使用的基础镜像
-FROM ubuntu:14.04
+FROM centos:7
 #作者信息
 MAINTAINER bmbbms 891765948@qq.com
 #安装ssh服务
-RUN apt-get updte && aapt-get install -y python
+RUN yum install openssh-server
 RUN mkdir -p /var/run/sshd
 
 RUN mkdir -p /root/.ssh
