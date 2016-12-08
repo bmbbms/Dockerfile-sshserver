@@ -3,7 +3,7 @@ FROM centos:7
 #作者信息
 MAINTAINER bmbbms 891765948@qq.com
 #安装ssh服务
-RUN yum install python
+RUN yum install -y python
 RUN mkdir -p /var/run/sshd
 
 RUN mkdir -p /root/.ssh
